@@ -1,6 +1,6 @@
 # Atari-BASIC-benchmarks
 
-This repo contains a number of common benchmarking programs from the early 1980s, with timing functions added. In recent versions of Atari800Mac, you can simply cut the text and paste into the emulator and then `RUN` them. Remember to `NEW` between runs.
+This repo contains a number of common benchmarking programs from the early 1980s converted to Atari format and with timing functions added. In recent versions of Atari800Mac, you can simply cut the text and paste into the emulator and then `RUN` them. Remember to `NEW` between runs.
 
 I have attempted to retain the original line numbering pattern where possible, adding the timing functions on new lines. The timers are stored `ST` and `ET`, which do not appear to have been used in any of the benchmarks, in contrast to `S`, `T` and `E`. 
 
@@ -18,4 +18,4 @@ The benchmarks are:
 
 - ruggfeldman - All seven variations of the original [Rugg/Feldman](https://en.wikipedia.org/wiki/Rugg/Feldman_benchmarks) tests, along with the eighth test from PCW.
 
-- wilkinson_sieve - Version of the sieve converted to Atari format by Bill Wilkinson himself, found in the [February 1985 issue of Compute!](https://archive.org/details/1985-02-compute-magazine/page/n139/mode/2up) magazine. This version uses a manipulated string for storage, as the Atari's 6-byte number format leaves too little room for an array 8192 long. It is not clear whether the lookup/modifications using the string slicing syntax will compare to the numeric array lookup used on other platforms, some experimentation here would be useful. A more annoying change is that it uses colons to combine lines, but as Atari BASIC's line lookup routine is slow, this actually improves performance so it is not a direct comparison to other versions of sieve.
+- wilkinson_sieve - Version of the sieve converted to Atari format by Bill Wilkinson himself, found in the [February 1985 issue of Compute!](https://archive.org/details/1985-02-compute-magazine/page/n139/mode/2up) magazine. This version uses a manipulated string for storage, as the Atari's 6-byte number format leaves too little room for an array 8192 long. It is not clear whether the lookup/modifications using the string slicing syntax will compare to the numeric array lookup used on other platforms, some experimentation here would be useful.
