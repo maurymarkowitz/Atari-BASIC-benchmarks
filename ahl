@@ -1,5 +1,5 @@
 9 ST=PEEK(18)*65536+PEEK(19)*256+PEEK(20)
-10 ' Ahl's Simple Benchmark
+10 REM Ahl's Simple Benchmark
 20 FOR N=1 TO 100: A=N
 30 FOR I=1 TO 10
 40 A=SQR(A): R=R+RND(1)
