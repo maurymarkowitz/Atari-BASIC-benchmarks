@@ -20,6 +20,6 @@ The benchmarks are:
 
 - ruggfeldman - All seven variations of the original [Rugg/Feldman](https://en.wikipedia.org/wiki/Rugg/Feldman_benchmarks) tests, along with the eighth test from PCW. The last test contains various transcendental functions, which will also be useful for math library updates.
 
-- scruss - [scruss's extensive test suite](https://github.com/scruss/bench64) for MS BASIC converted to Atari format by Faicuai. Values are normalized to the C64=100.
+- scruss - [scruss's extensive test suite](https://github.com/scruss/bench64) for MS BASIC converted to Atari format by Faicuai. Values are normalized to the C64=100, so a value of 20 means it is 1/5th as fast as a C64 on that test.
 
 - wilkinson_sieve - Version of the sieve converted to Atari format by Bill Wilkinson himself, found in the [February 1985 issue of Compute!](https://archive.org/details/1985-02-compute-magazine/page/n139/mode/2up) magazine. This version uses a manipulated string for storage, as the Atari's 6-byte number format leaves too little room for an array 8192 long. It is not clear whether the lookup/modifications using the string slicing syntax will compare to the numeric array lookup used on other platforms, some experimentation here would be useful.
