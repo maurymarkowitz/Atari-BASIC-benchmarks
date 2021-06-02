@@ -4,7 +4,7 @@ This repo contains a number of common BASIC benchmarking programs from the early
 
 I have attempted to retain the original line numbering pattern where possible, adding the timing functions on new lines. The timers are stored `ST` and `ET`, which do not appear to have been used in any of the benchmarks, in contrast to `S`, `T` and `E`. 
 
-One of Atari BASIC's major performance problems was its slow line-lookup used in `GOTO` and even `FOR/NEXT`. Adding lines to the code will slow the programs very slightly, so the extra lines in these programs will slow their performance *slightly* compared to the originals. While somewhat annoying, the utility of adding internal timing is too useful to ignore and the effect appears to be unmeasureable.
+One of Atari BASIC's major performance problems was its slow line-lookup used in `GOTO` and even `FOR/NEXT`. Adding lines to the code will slow these lookups, so the extra lines in these programs will slow their performance *slightly* compared to the originals. While somewhat annoying, the utility of adding internal timing is too useful to ignore and the effect appears to be unmeasureable.
 
 As the timers are outside the loops that are actually performing the benchmark, adding similar timing lines on other platforms should have exactly the same effect on performance. On systems that lack timer functions, changing these to `REM`s will have the same effect, as it is the number of lines that is important, not what is on them.
 
