@@ -12,7 +12,7 @@ Note that on the Atari, the "time" is counted in screen cycles, so on PAL machin
 
 The benchmarks are:
 
-- ahl - The original Creative Computing benchmark from the [November 1983 issue of Creative Computing](https://archive.org/details/creativecomputing-1983-11/page/n269/mode/2up) magazine.
+- ahl - The later version of the Creative Computing benchmark. The original from the [November 1983 issue of Creative Computing](https://archive.org/details/creativecomputing-1983-11/page/n269/mode/2up) magazine was later modified to reduce the number of compound statements.
 
 - broucke - Found in an article on the Newell FASTCHIP from the [October/November 1982 issue of ANTIC](https://archive.org/details/1982-10-anticmagazine/page/n15/mode/2up) magazine. The main goal of this test is to compare floating point accuracy, which will prove useful for those improving Atari's notorious math library.
 
@@ -20,6 +20,6 @@ The benchmarks are:
 
 - ruggfeldman - All seven variations of the original [Rugg/Feldman](https://en.wikipedia.org/wiki/Rugg/Feldman_benchmarks) tests, along with the eighth test from PCW. The last test contains various transcendental functions, which will also be useful for math library updates.
 
-- scruss - scruss's extensive test suite for MS BASIC converted to Atari format by Faicuai. Values are normalized to the C64=100.
+- scruss - [scruss's extensive test suite](https://github.com/scruss/bench64) for MS BASIC converted to Atari format by Faicuai. Values are normalized to the C64=100.
 
 - wilkinson_sieve - Version of the sieve converted to Atari format by Bill Wilkinson himself, found in the [February 1985 issue of Compute!](https://archive.org/details/1985-02-compute-magazine/page/n139/mode/2up) magazine. This version uses a manipulated string for storage, as the Atari's 6-byte number format leaves too little room for an array 8192 long. It is not clear whether the lookup/modifications using the string slicing syntax will compare to the numeric array lookup used on other platforms, some experimentation here would be useful.
