@@ -1,6 +1,6 @@
 This file is used to record the results of running the various benchmarks in this repo. If you'd like to add one, please record the test conditions - emulator or platform used, version of BASIC, and whether or not a math pack is being used. If you use a new math pack, please run the tests using Atari's math pack as well (if possible) for comparison purposes. Please coldboot between runs.
 
-Output values from the tests (eg, ahl "random") are not required, this is about timing not accuracy. Times in seconds rounded to two decimals.
+Output values from the tests (eg, ahl's "random") are not required - this is about timing not accuracy. Times in seconds rounded to two decimals.
 
 Send in those pull requests!
 
