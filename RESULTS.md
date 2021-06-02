@@ -21,12 +21,12 @@ If you'd like to add one, please record the test conditions - emulator or platfo
 | Atari Rev C        | Atari800XMac 6.0     | Atari    | 2.3   | 7.6   | 20.7  | 24.2  | 28.3  | 43.3  | 65.3  | 45.5  |
 | BASIC XL 1.03      | Atari800XMac 6.0     | Atari    | 1.6   | 3.6   | 16.0  | 15.9  | 18.1  | 28.4  | 39.1  | 44.5  |
 | BASIC XL 1.03 fast | Atari800XMac 6.0     | Atari    | 1.4   | 2.9   | 15.3  | 15.2  | 15.9  | 23.9  | 34.6  | 44.5  |
-| BASIC XE 4.1       | Atari800XMac 6.0     | Atari    |       |       |       |       |       |       |       |       |
-| BASIC XE 4.1 ext   | Atari800XMac 6.0     | XE       |       |       |       |       |       |       |       |       |
-| BASIC XE 4.1 fast  | Atari800XMac 6.0     | XE       |       |       |       |       |       |       |       |       |
+| BASIC XE 4.1       | Atari800XMac 6.0     | Atari    | 1.5   | 4.4   | 16.5  | 16.5  | 20.2  | 30.0  | 43.3  | 44.5  |
+| BASIC XE 4.1 ext   | Atari800XMac 6.0     | XE       | 1.4   | 2.7   | 8.7   | 9.0   | 11.3  | 21.1  | 30.1  | 6.1   |
+| BASIC XE 4.1 fast  | Atari800XMac 6.0     | XE       | 1.2   | 2.1   | 8.1   | 8.3   | 9.2   | 16.7  | 25.6  | 6.1   |
 | Turbo-BASIC XL 1.05| Atari800XMac 6.0     | Turbo    | 0.9   | 3.1   | 8.2   | 8.9   | 10.0  | 15.6  | 26.2  | 6.1   |
 
-**scruss tests**, value for I:
+**scruss tests**, value for I, higher is better:
 
 | BASIC              | System               | Math lib | for | goto | gosub | if  | fn  | maths | string | array | overall |
 |--------------------|----------------------|----------|-----|------|-------|-----|-----|-------|--------|-------|---------|
