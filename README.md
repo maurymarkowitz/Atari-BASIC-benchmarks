@@ -1,4 +1,4 @@
-# Atari-BASIC-benchmarks
+# Atari BASIC benchmarks
 
 This repo contains a number of common BASIC benchmarking programs from the early 1980s converted to Atari format and with timing functions added. In recent versions of Atari800Mac, you can simply cut the text and paste into the emulator and then `RUN` them. Remember to `NEW` between runs.
 
