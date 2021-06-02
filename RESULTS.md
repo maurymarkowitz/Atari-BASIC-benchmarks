@@ -34,7 +34,7 @@ If you'd like to add one, please record the test conditions - emulator or platfo
 | BASIC XL 1.03      | Atari800XMac 6.0     | Atari    | 35  | 27   | 28    | 59  | 62  | 33    | 74     | 80    | 42      |
 | BASIC XL 1.03 fast | Atari800XMac 6.0     | Atari    | 100 | 140  | 129   | 152 | 105 | 33    | 113    | 118   | 91      |
 | BASIC XE 4.1       | Atari800XMac 6.0     | Atari    | 37  | 24   | 27    | 65  | 60  | 33    | 60     | 75    | 40      |
-| BASIC XE 4.1 ext   | Atari800XMac 6.0     | XE       | 39  | 29   | 29    |     |     |       |        |       |         |
-| BASIC XE 4.1 fast  | Atari800XMac 6.0     | XE       |     |      |       |     |     |       |        |       |         |
+| BASIC XE 4.1 ext   | Atari800XMac 6.0     | XE       | 39  | 29   | 29    | 67  | 80  | 123   | 81     | 105   | 53      |
+| BASIC XE 4.1 fast  | Atari800XMac 6.0     | XE       | 130 | 176  | 145   | 206 | 167 | 128   | 129    | 177   | 153     |
 | Turbo-BASIC XL 1.05| Atari800XMac 6.0     | Turbo    | 182 | 154  | 155   | 256 | 154 | 137   | 151    | 169   | 164     |
 | Basic++ 1.08       | atari++ 1.83         |          | 138 | 118  | 121   | 183 | 106 | 100   | 155    | 131   | 127     |
