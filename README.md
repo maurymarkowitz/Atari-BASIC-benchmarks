@@ -12,7 +12,7 @@ Note that on the Atari, the "time" is counted in screen cycles, so on PAL machin
 
 The benchmarks are:
 
-- ahl - The later version of the Creative Computing benchmark. The original from the [November 1983 issue of Creative Computing](https://archive.org/details/creativecomputing-1983-11/page/n269/mode/2up) magazine was later modified to reduce the number of compound statements.
+- ahl - The later version of the Creative Computing benchmark. The original from the [November 1983 issue of Creative Computing](https://archive.org/details/creativecomputing-1983-11/page/n269/mode/2up) magazine had lines that were over 40 characters, this version separated out compound statements to reduce line length.
 
 - broucke - Found in an article on the Newell FASTCHIP from the [October/November 1982 issue of ANTIC](https://archive.org/details/1982-10-anticmagazine/page/n15/mode/2up) magazine. The main goal of this test is to compare floating point accuracy, which will prove useful for those improving Atari's notorious math library.
 
