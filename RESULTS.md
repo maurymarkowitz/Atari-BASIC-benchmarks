@@ -2,14 +2,16 @@ This file is used to record the results of running the various benchmarks in thi
 
 If you'd like to add one, please record the test conditions - emulator or platform used, version of BASIC, and whether or not a math pack is being used. If you use a new math pack, please run the tests using Atari's math pack as well (if possible) for comparison purposes. Remember to `NEW` or coldboot between runs. Output values from the tests (eg, ahl's "random") are not required - this is about timing, not accuracy. Send in those pull requests!
 
-**Classic tests**, seconds rounded to one decimal:
+**classic tests**, seconds rounded to one decimal:
 
 | BASIC              | System               | Math lib | ahl   | broucke | dolkus | sieve |
 |--------------------|----------------------|----------|-------|---------|--------|-------|
 | Atari Rev C        | Atari800XMac 6.0     | Atari    | 404   | 14.8    | 14.9   | 314.6 |
 | BASIC XL 1.03      | Atari800XMac 6.0     | Atari    | 395   | 10.7    | 13.6   | 167.6 |
 | BASIC XL 1.03 fast | Atari800XMac 6.0     | Atari    | 395   | 10.5    | 13.5   | 148.1 |
-| BASIC XE 4.1       | Atari800XMac 6.0     | ??       | 388.2 | 10.3    | 13.2   | 227.8 |
+| BASIC XE 4.1       | Atari800XMac 6.0     | Atari    | 388.2 | 10.3    | 13.2   | 227.8 |
+| BASIC XE 4.1 ext   | Atari800XMac 6.0     | XE       | 50.4  | 5.8     | 5.2    | 138.9 |
+| BASIC XE 4.1 fast  | Atari800XMac 6.0     | XE       | 49.7  | 5.5     | 5.0    | 120.3 |
 | Turbo-BASIC XL 1.05| Atari800XMac 6.0     | Turbo    | 41.6  | 5.9     | 5.1    | 129.8 |
 
 **Rugg/Feldman tests**, seconds rounded to one decimal:
@@ -20,6 +22,8 @@ If you'd like to add one, please record the test conditions - emulator or platfo
 | BASIC XL 1.03      | Atari800XMac 6.0     | Atari    | 1.6   | 3.6   | 16.0  | 15.9  | 18.1  | 28.4  | 39.1  | 44.5  |
 | BASIC XL 1.03 fast | Atari800XMac 6.0     | Atari    | 1.4   | 2.9   | 15.3  | 15.2  | 15.9  | 23.9  | 34.6  | 44.5  |
 | BASIC XE 4.1       | Atari800XMac 6.0     | Atari    |       |       |       |       |       |       |       |       |
+| BASIC XE 4.1 ext   | Atari800XMac 6.0     | XE       |       |       |       |       |       |       |       |       |
+| BASIC XE 4.1 fast  | Atari800XMac 6.0     | XE       |       |       |       |       |       |       |       |       |
 | Turbo-BASIC XL 1.05| Atari800XMac 6.0     | Turbo    | 0.9   | 3.1   | 8.2   | 8.9   | 10.0  | 15.6  | 26.2  | 6.1   |
 
 **scruss tests**, value for I:
@@ -30,5 +34,7 @@ If you'd like to add one, please record the test conditions - emulator or platfo
 | BASIC XL 1.03      | Atari800XMac 6.0     | Atari    | 35  | 27   | 28    | 59  | 62  | 33    | 74     | 80    | 42      |
 | BASIC XL 1.03 fast | Atari800XMac 6.0     | Atari    | 100 | 140  | 129   | 152 | 105 | 33    | 113    | 118   | 91      |
 | BASIC XE 4.1       | Atari800XMac 6.0     | Atari    | 37  | 24   | 27    | 65  | 60  | 33    | 60     | 75    | 40      |
+| BASIC XE 4.1 ext   | Atari800XMac 6.0     | XE       | 39  | 29   | 29    |     |     |       |        |       |         |
+| BASIC XE 4.1 fast  | Atari800XMac 6.0     | XE       |     |      |       |     |     |       |        |       |         |
 | Turbo-BASIC XL 1.05| Atari800XMac 6.0     | Turbo    | 182 | 154  | 155   | 256 | 154 | 137   | 151    | 169   | 164     |
 | Basic++ 1.08       | atari++ 1.83         |          | 138 | 118  | 121   | 183 | 106 | 100   | 155    | 131   | 127     |
