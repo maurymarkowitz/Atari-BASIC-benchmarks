@@ -1,12 +1,13 @@
 This file is used to record the results of running the various benchmarks in this repo.
 
-If you'd like to add one, please record the test conditions - emulator or platform used, version of BASIC, and whether or not a math pack is being used. If you use a new math pack, please run the tests using Atari's math pack as well (if possible) for comparison purposes. Remember to `NEW` or coldboot between runs. Output values from the tests (eg, ahl's "random") are not required - this is about timing, not accuracy. Send in those pull requests!
+If you'd like to add one, please record the test conditions - emulator or platform used, version of BASIC, and whether or not a math pack is being used. Turning off interrupts, using lower-impact display modes or hardware or any other methods of speeding up the system are considered invalid. If you use a new math pack, please run the tests using Atari's math pack as well (if possible) for comparison purposes. Remember to coldboot between runs. Output values from the tests (eg, ahl's "random") are not required - this is about timing, not accuracy. Send in those pull requests!
 
 **classic tests**, seconds rounded to one decimal:
 
 | BASIC              | System               | Math lib | ahl   | broucke | dolkus | sieve |
 |--------------------|----------------------|----------|-------|---------|--------|-------|
 | Atari Rev C        | Atari800XMac 6.0     | Atari    | 404   | 14.8    | 14.9   | 314.6 |
+| Atari MS BASIC II  | Atari800XMac 6.0     | MS BASIC | 101.9 | 27.3    | 6.3    | n.a   |
 | BASIC XL 1.03      | Atari800XMac 6.0     | Atari    | 395   | 10.7    | 13.6   | 167.6 |
 | BASIC XL 1.03 fast | Atari800XMac 6.0     | Atari    | 395   | 10.5    | 13.5   | 148.1 |
 | BASIC XE 4.1       | Atari800XMac 6.0     | Atari    | 388.2 | 10.3    | 13.2   | 227.8 |
@@ -19,6 +20,7 @@ If you'd like to add one, please record the test conditions - emulator or platfo
 | BASIC              | System               | Math lib | rugg1 | rugg2 | rugg3 | rugg4 | rugg5 | rugg6 | rugg7 | rugg8 |
 |--------------------|----------------------|----------|-------|-------|-------|-------|-------|-------|-------|-------|
 | Atari Rev C        | Atari800XMac 6.0     | Atari    | 2.3   | 7.6   | 20.7  | 24.2  | 28.3  | 43.3  | 65.3  | 45.5  |
+| Atari MS BASIC II  | Atari800XMac 6.0     | MS BASIC | 1.5   | 9.3   | 17.7  | 20.6  | 21.1  | 35.1  | 55.1  | 8.4   |
 | BASIC XL 1.03      | Atari800XMac 6.0     | Atari    | 1.6   | 3.6   | 16.0  | 15.9  | 18.1  | 28.4  | 39.1  | 44.5  |
 | BASIC XL 1.03 fast | Atari800XMac 6.0     | Atari    | 1.4   | 2.9   | 15.3  | 15.2  | 15.9  | 23.9  | 34.6  | 44.5  |
 | BASIC XE 4.1       | Atari800XMac 6.0     | Atari    | 1.5   | 4.4   | 16.5  | 16.5  | 20.2  | 30.0  | 43.3  | 44.5  |
@@ -31,6 +33,7 @@ If you'd like to add one, please record the test conditions - emulator or platfo
 | BASIC              | System               | Math lib | for | goto | gosub | if  | fn  | maths | string | array | overall |
 |--------------------|----------------------|----------|-----|------|-------|-----|-----|-------|--------|-------|---------|
 | Atari Rev C        | Atari800XMac 6.0     | Atari    | 31  | 21   | 24    | 49  | 46  | 33    | 53     | 56    | 35      |
+| Atari MS BASIC II  | Atari800XMac 6.0     | MS BASIC | 94  | 47   | 101   | 96  | 92  | 142   | 102    | 90    | 88      | ***
 | BASIC XL 1.03      | Atari800XMac 6.0     | Atari    | 35  | 27   | 28    | 59  | 62  | 33    | 74     | 80    | 42      |
 | BASIC XL 1.03 fast | Atari800XMac 6.0     | Atari    | 100 | 140  | 129   | 152 | 105 | 33    | 113    | 118   | 91      |
 | BASIC XE 4.1       | Atari800XMac 6.0     | Atari    | 37  | 24   | 27    | 65  | 60  | 33    | 60     | 75    | 40      |
@@ -38,3 +41,8 @@ If you'd like to add one, please record the test conditions - emulator or platfo
 | BASIC XE 4.1 fast  | Atari800XMac 6.0     | XE       | 130 | 176  | 145   | 206 | 167 | 128   | 129    | 177   | 153     |
 | Turbo-BASIC XL 1.5 | Atari800XMac 6.0     | Turbo    | 182 | 154  | 155   | 256 | 154 | 137   | 151    | 169   | 164     |
 | Basic++ 1.08       | atari++ 1.83         |          | 138 | 118  | 121   | 183 | 106 | 100   | 155    | 131   | 127     |
+
+Notes:
+
+*** For scruss runs, Atari MS BASIC was tested using the original C64 code, and is therefore not directly compariable to the Atari compatible BASICs. It is, however, suitable for comparison to other MS dialects found on other machines.
+
