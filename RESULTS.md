@@ -33,7 +33,7 @@ If you'd like to add one, please record the test conditions - emulator or platfo
 | BASIC              | System               | Math lib | for | goto | gosub | if  | fn  | maths | string | array | overall |
 |--------------------|----------------------|----------|-----|------|-------|-----|-----|-------|--------|-------|---------|
 | Atari Rev C        | Atari800XMac 6.0     | Atari    | 31  | 21   | 24    | 49  | 46  | 33    | 53     | 56    | 35      |
-| Atari MS BASIC II  | Atari800XMac 6.0     | MS       | 94  | 47   | 101   | 96  | 92  | 142   | 102    | 90    | 88      | ***
+| Atari MS BASIC II  | Atari800XMac 6.0     | MS       | 94  | 47   | 101   | 96  | 92  | 142   | 102    | 90    | 88      | (1)
 | BASIC XL 1.03      | Atari800XMac 6.0     | Atari    | 35  | 27   | 28    | 59  | 62  | 33    | 74     | 80    | 42      |
 | BASIC XL 1.03 fast | Atari800XMac 6.0     | Atari    | 100 | 140  | 129   | 152 | 105 | 33    | 113    | 118   | 91      |
 | BASIC XE 4.1       | Atari800XMac 6.0     | Atari    | 37  | 24   | 27    | 65  | 60  | 33    | 60     | 75    | 40      |
@@ -42,7 +42,22 @@ If you'd like to add one, please record the test conditions - emulator or platfo
 | Turbo-BASIC XL 1.5 | Atari800XMac 6.0     | Turbo    | 182 | 154  | 155   | 256 | 154 | 137   | 151    | 169   | 164     |
 | Basic++ 1.08       | atari++ 1.83         |          | 138 | 118  | 121   | 183 | 106 | 100   | 155    | 131   | 127     |
 
+**wilkinson looping tests**, seconds rounded to one decimal:
+
+| BASIC              | System               | Math lib | a     | b     | c      | g     |
+|--------------------|----------------------|----------|-------|-------|--------|-------|
+| Atari Rev C        | Atari800XMac 6.0     | Atari    | 71.6  | 71.6  | 72.1   | 70.1  | (2)
+| Atari MS BASIC II  | Atari800XMac 6.0     | MS       |       |       |        |       |
+| BASIC XL 1.03      | Atari800XMac 6.0     | Atari    | 36.9  | 36.9  | 37.5   | 36.9  |
+| BASIC XL 1.03 fast | Atari800XMac 6.0     | Atari    | 395   | 10.5  | 13.5   | 148.1 |
+| BASIC XE 4.1       | Atari800XMac 6.0     | Atari    | 388.2 | 10.3  | 13.2   | 227.8 |
+| BASIC XE 4.1 ext   | Atari800XMac 6.0     | XE       | 50.4  | 5.8   | 5.2    | 138.9 |
+| BASIC XE 4.1 fast  | Atari800XMac 6.0     | XE       | 49.7  | 5.5   | 5.0    | 120.3 |
+| Turbo-BASIC XL 1.5 | Atari800XMac 6.0     | Turbo    | 41.6  | 5.9   | 5.1    | 129.8 |
+
+
 Notes:
 
-*** For scruss runs, Atari MS BASIC was tested using the original C64 code, and is therefore not directly compariable to the Atari compatible BASICs. It is, however, suitable for comparison to other MS dialects found on other machines.
+(1) For scruss runs, Atari MS BASIC was tested using the original C64 code, and is therefore not directly compariable to the Atari compatible BASICs. It is, however, suitable for comparison to other MS dialects found on other machines.
 
+(2) These tests run as-is on MS BASIC. Using `S=TIME` for timing, test a takes 312.4 seconds on a PET, and thus will turn in times within a few seconds on the C64 and Apple II. The much better performance of Atari BASIC in these tests is largely due to MS having to re-parse constants and/or perform variable lookups. For illustrating the differences in the underlying concepts in AB and MS, these tests are quite useful.
