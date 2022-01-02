@@ -44,17 +44,16 @@ If you'd like to add one, please record the test conditions - emulator or platfo
 
 **wilkinson looping tests**, seconds rounded to one decimal:
 
-| BASIC              | System               | Math lib | a     | b     | c     | g     |
-|--------------------|----------------------|----------|-------|-------|-------|-------|
-| Atari Rev C        | Atari800XMac 6.0     | Atari    | 71.6  | 71.6  | 72.1  | 70.1  |
-| Atari MS BASIC II  | Atari800XMac 6.0     | MS       | 270.8 | 708.2 | 57.8  | 57.1  | (3, 4)
-| BASIC XL 1.03      | Atari800XMac 6.0     | Atari    | 36.9  | 36.9  | 37.5  | 36.9  |
-| BASIC XL 1.03 fast | Atari800XMac 6.0     | Atari    | 31.2  | 31.2  | 31.7  | 31.2  | (4)
-| BASIC XE 4.1       | Atari800XMac 6.0     | Atari    | 37.1  | 37.1  | 37.2  | 36.7  |
-| BASIC XE 4.1 ext   | Atari800XMac 6.0     | XE       | 26.3  | 26.3  | 26.4  | 25.8  |
-| BASIC XE 4.1 fast  | Atari800XMac 6.0     | XE       | 21.0  | 21.0  | 21.1  | 20.6  |
-| Turbo-BASIC XL 1.5 | Atari800XMac 6.0     | Turbo    | 29.7  | 29.7  | 30.1  | 29.6  |
-
+| BASIC              | System               | Math lib | a     | b     | c     | g     | h     |
+|--------------------|----------------------|----------|-------|-------|-------|-------|-------|
+| Atari Rev C        | Atari800XMac 6.0     | Atari    | 71.6  | 71.6  | 72.1  | 70.1  | 55.9  |
+| Atari MS BASIC II  | Atari800XMac 6.0     | MS       | 270.8 | 708.2 | 57.8  | 57.1  | 258.9 | (3, 4)
+| BASIC XL 1.03      | Atari800XMac 6.0     | Atari    | 36.9  | 36.9  | 37.5  | 36.9  | 33.5  |
+| BASIC XL 1.03 fast | Atari800XMac 6.0     | Atari    | 31.2  | 31.2  | 31.7  | 31.2  | 31.4  | (4)
+| BASIC XE 4.1       | Atari800XMac 6.0     | Atari    | 37.1  | 37.1  | 37.2  | 36.7  | 28.7  |
+| BASIC XE 4.1 ext   | Atari800XMac 6.0     | XE       | 26.3  | 26.3  | 26.4  | 25.8  | 25.2  |
+| BASIC XE 4.1 fast  | Atari800XMac 6.0     | XE       | 21.0  | 21.0  | 21.1  | 20.6  | 22.8  |
+| Turbo-BASIC XL 1.5 | Atari800XMac 6.0     | Turbo    | 29.7  | 29.7  | 30.1  | 29.6  | 23.3  |
 
 Notes:
 
