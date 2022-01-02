@@ -21,3 +21,5 @@ The benchmarks are:
 - scruss - [scruss's extensive test suite](https://github.com/scruss/bench64) for MS BASIC converted to Atari format by Faicuai. Values are normalized to the C64=100, so a value of 20 means it is 1/5th as fast as a C64 on that test.
 
 - wilkinson_sieve - Version of the sieve converted to Atari format by Bill Wilkinson himself, found in the [February 1985 issue of Compute!](https://archive.org/details/1985-02-compute-magazine/page/n139/mode/2up) magazine. This version uses a manipulated string for storage, as the Atari's 6-byte number format leaves too little room for an array 8192 long. It is not clear whether the lookup/modifications using the string slicing syntax will compare to the numeric array lookup used on other platforms, some experimentation here would be useful.
+
+- wilkinson_loops - six variations, A through F, of a simple looping system from the [September 1982 issue of Compute!](https://archive.org/details/1982-09-compute-magazine/page/n117/mode/2up). The system demonstrates that on some benchmarks, Atari BASIC does just fine. It is not surprising that the author of Atari BASIC would write one that shows it to be fast...
