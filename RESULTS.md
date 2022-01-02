@@ -61,7 +61,7 @@ Notes:
 
 (2) For scruss runs, Atari MS BASIC was tested using the original C64 code, and is therefore not directly compariable to the Atari BASICs. It is, however, suitable for comparison to other MS dialects found on other machines.
 
-(3) These tests run without conversion on MS BASIC. Using `S=TIME` for timing, test a takes 312.4 seconds on a PET, and thus will turn in times within a few seconds of this on the C64 and Apple II. The much better performance of Atari BASIC in these tests is largely due to MS having to re-parse constants and/or perform variable lookups. For illustrating the differences in the underlying concepts in AB and MS, these tests are quite useful.
+(3) These tests run without conversion on MS BASIC. Using `S=TIME` for timing, test a takes 312.4 seconds on a PET and 296.0 for h. Times will be within a few seconds on the C64 and Apple II. The much better performance of Atari BASIC in these tests is largely due to MS having to re-parse constants and/or perform variable lookups. For illustrating the differences in the underlying concepts in AB and MS, these tests are quite useful.
 
 (4) version b deliberately triggers double precision on MS, while still being within the 10-digit precision of AB.
 
