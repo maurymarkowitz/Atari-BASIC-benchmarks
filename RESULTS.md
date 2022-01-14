@@ -29,11 +29,12 @@ If you'd like to add one, please record the test conditions - emulator or platfo
 | BASIC XE 4.1 fast  | Atari800XMac 6.0     | XE       | 1.2   | 2.1   | 8.1   | 8.3   | 9.2   | 16.7  | 25.6  | 6.1   |
 | Turbo-BASIC XL 1.5 | Atari800XMac 6.0     | Turbo    | 0.9   | 3.1   | 8.2   | 8.9   | 10.0  | 15.6  | 26.2  | 6.1   |
 
-**scruss tests**, value for I, higher is better, 100=C64 performance:
+**scruss tests**, value for I, 100=C64 performance on that test, higher is better:
 
 | BASIC              | System               | Math lib | for | goto | gosub | if  | fn  | maths | string | array | overall |
 |--------------------|----------------------|----------|-----|------|-------|-----|-----|-------|--------|-------|---------|
 | Atari Rev C        | Atari800XMac 6.0     | Atari    | 31  | 21   | 24    | 49  | 46  | 33    | 53     | 56    | 35      |
+| Atari + FASTPROG   | Atari800XMac 6.0     | Atari    | 69  | 50   | 58    | 99  | 60  | 33    | 70     | 68    | 58      |
 | Atari MS BASIC II  | Atari800XMac 6.0     | MS       | 94  | 47   | 101   | 96  | 92  | 142   | 102    | 90    | 88      | (3)
 | BASIC XL 1.03      | Atari800XMac 6.0     | Atari    | 35  | 27   | 28    | 59  | 62  | 33    | 74     | 80    | 42      |
 | BASIC XL 1.03 fast | Atari800XMac 6.0     | Atari    | 100 | 140  | 129   | 152 | 105 | 33    | 113    | 118   | 91      |
