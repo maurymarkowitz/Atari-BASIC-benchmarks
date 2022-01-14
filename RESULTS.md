@@ -7,7 +7,7 @@ If you'd like to add one, please record the test conditions - emulator or platfo
 | BASIC              | System               | Math lib | ahl   | broucke | dolkus | sieve |
 |--------------------|----------------------|----------|-------|---------|--------|-------|
 | Atari Rev C        | Atari800XMac 6.0     | Atari    | 404   | 14.8    | 14.9   | 314.6 |
-| Atari + FAST       | Atari800XMac 6.0     | Atari    | 404.3 | 14.6    | 6.3    | n.a   | (1)
+| Atari + FASTPROG   | Atari800XMac 6.0     | Atari    | 404.3 | 14.6    | 14.9   |       | (1)
 | Atari MS BASIC II  | Atari800XMac 6.0     | MS       | 101.9 | 27.3    | 6.3    | n.a   |
 | BASIC XL 1.03      | Atari800XMac 6.0     | Atari    | 395   | 10.7    | 13.6   | 167.6 |
 | BASIC XL 1.03 fast | Atari800XMac 6.0     | Atari    | 395   | 10.5    | 13.5   | 148.1 |
@@ -58,7 +58,7 @@ If you'd like to add one, please record the test conditions - emulator or platfo
 
 Notes:
 
-(1) the FAST is the Fast-Stack and Fast-Jump patches from the February 1988 Antic magazine. These improve the performance of loops and branches, and generally only have noticable effects on larger programs.
+(1) FASTPROG adds the Fast-Stack and Fast-Jump patches from the February 1988 Antic magazine. These improve the performance of loops and branches, and generally only have noticable effects on larger programs.
 
 (2) "ext" is with the extensions disk loaded, which replaces the floating point library. The FAST command is enabled by this disk as well, but still has to be separately invoked.
 
