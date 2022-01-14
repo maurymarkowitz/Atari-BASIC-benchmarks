@@ -2,15 +2,15 @@
 
 This repo contains a number of common BASIC benchmarking programs from the early 1980s converted to Atari format and with timing functions added. In recent versions of Atari800Mac, you can simply cut the text and paste into the emulator and then `RUN` them. Remember to `NEW` between runs.
 
-I have attempted to retain the original line numbering pattern where possible, adding the timing functions on new lines. The timers are stored `ST` and `ET`, which do not appear to have been used in any of the benchmarks, in contrast to `S`, `T` and `E`. 
+I have attempted to retain the original line numbering pattern where possible, adding the timing functions on new lines. The timers are stored `ST` and `ET`, which do not appear to have been used in any of the benchmarks, in contrast to `S`, `T` and `E` which are found in a number of them.
 
-One of Atari BASIC's major performance problems was its slow line-lookup used in `GOTO` and even `FOR/NEXT`. Adding lines to the code will slow these lookups, so the extra lines in these programs will slow their performance *slightly* compared to the originals. While somewhat annoying, the utility of adding internal timing is too useful to ignore and the effect appears to be unmeasureable.
+One of Atari BASIC's major performance problems was its slow line-lookup used in `GOTO` and even `FOR/NEXT`. Adding lines to the code will slow these lookups, so the extra lines in these programs will slow their performance *slightly* compared to the originals. While somewhat annoying, the utility of adding internal timing is too useful to ignore.
 
 Note that on the Atari, the "time" is counted in screen cycles, so on PAL machines the final conversion to seconds would be `/50`, not `/60`.
 
 The benchmarks are:
 
-- ahl - The later version of the Creative Computing benchmark. The original from the [November 1983 issue of Creative Computing](https://archive.org/details/creativecomputing-1983-11/page/n269) magazine had lines that were over 40 characters, [this version from May 1984](https://archive.org/details/creativecomputing-1984-03/page/n7) separated out some compound statements into separate lines to reduce line length.
+- ahl - The 1984 version of the Creative Computing benchmark. The original from the [November 1983 issue of Creative Computing](https://archive.org/details/creativecomputing-1983-11/page/n269) magazine had lines that were over 40 characters, [this version from May 1984](https://archive.org/details/creativecomputing-1984-03/page/n7) separated out some compound statements into separate lines to reduce line length.
 
 - broucke - Found in an article on the Newell FASTCHIP from the [October/November 1982 issue of ANTIC](https://archive.org/details/1982-10-anticmagazine/page/n15/mode/2up) magazine. The main goal of this test is to compare floating point accuracy, which will prove useful for those improving Atari's notorious math library.
 
