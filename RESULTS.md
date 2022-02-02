@@ -2,7 +2,7 @@ This file is used to record the results of running the various benchmarks in thi
 
 If you'd like to add one, please record the test conditions - emulator or platform used, version of BASIC, and whether or not a math pack is being used. Turning off interrupts, using lower-impact display modes or hardware or any other methods of speeding up the system are considered invalid. If you use a new math pack, please run the tests using Atari's math pack as well (if possible) for comparison purposes. Output values from the tests (eg, ahl's "random") are not required - this is about timing, not accuracy. Send in those pull requests!
 
-**classic tests**, seconds rounded to one decimal:
+**classic tests**, seconds rounded to one decimal, lower is better:
 
 | BASIC              | System           | Math lib | ahl   | broucke | dolkus | sieve |
 |--------------------|------------------|----------|-------|---------|--------|-------|
@@ -17,8 +17,9 @@ If you'd like to add one, please record the test conditions - emulator or platfo
 | BASIC XE 4.1 ext   | A800XMac 6.0     | XE       |  50.4 |  5.8    |  5.2   | 138.9 |
 | BASIC XE 4.1 fast  | A800XMac 6.0     | XE       |  49.7 |  5.5    |  5.0   | 120.3 |
 | Turbo-BASIC XL 1.5 | A800XMac 6.0     | Turbo    |  41.6 |  5.9    |  5.1   | 129.8 |
+| Altirra 1.29       | A800XMac 6.0     | Atari    | 298.9 |  9.9    | 12.5   | 197.1 |
 
-**Rugg/Feldman tests**, seconds rounded to one decimal:
+**Rugg/Feldman tests**, seconds rounded to one decimal, lower is better:
 
 | BASIC              | System           | Math lib | rugg1 | rugg2 | rugg3 | rugg4 | rugg5 | rugg6 | rugg7 | rugg8 |
 |--------------------|------------------|----------|-------|-------|-------|-------|-------|-------|-------|-------|
@@ -33,39 +34,42 @@ If you'd like to add one, please record the test conditions - emulator or platfo
 | BASIC XE 4.1 ext   | A800XMac 6.0     | XE       | 1.4   | 2.7   |  8.7  |  9.0  | 11.3  | 21.1  | 30.1  |  6.1  |
 | BASIC XE 4.1 fast  | A800XMac 6.0     | XE       | 1.2   | 2.1   |  8.1  |  8.3  |  9.2  | 16.7  | 25.6  |  6.1  |
 | Turbo-BASIC XL 1.5 | A800XMac 6.0     | Turbo    | 0.9   | 3.1   |  8.2  |  8.9  | 10.0  | 15.6  | 26.2  |  6.1  |
+| Altirra 1.29       | A800XMac 6.0     | Atari    | 1.1   | 4.3   | 16.2  | 16.1  | 18.5  | 24.5  | 35.7  | 44.9  |
 
-**scruss tests**, value for I, 100=C64 performance on that test, higher is better:
+**scruss tests**, 100=100% of C64 performance on that test, higher is better:
 
 | BASIC              | System           | Math lib | for | goto | gosub | if  | fn  | maths | string | array | overall |
 |--------------------|------------------|----------|-----|------|-------|-----|-----|-------|--------|-------|---------|
-| Atari Rev C        | A800XMac 6.0     | Atari    | 31  | 21   | 24    | 49  | 46  | 33    | 53     | 56    | 35      |
-| Atari Rev C        | A800XMac 6.0     | FastChip | 32  | 24   | 26    | 52  | 54  | 77    | 62     | 62    | 64      |
-| Atari + FASTPROG   | A800XMac 6.0     | Atari    | 69  | 50   | 58    | 99  | 60  | 33    | 70     | 68    | 58      |
+| Atari Rev C        | A800XMac 6.0     | Atari    |  31 |  21  |  24   |  49 |  46 |  33   |  53    |  56   |  35     |
+| Atari Rev C        | A800XMac 6.0     | FastChip |  32 |  24  |  26   |  52 |  54 |  77   |  62    |  62   |  64     |
+| Atari + FASTPROG   | A800XMac 6.0     | Atari    |  69 |  50  |  58   |  99 |  60 |  33   |  70    |  68   |  58     |
 | Atari + FASTPROG   | A800XMac 6.0     | FastChip |     |      |       |     |     |       |        |       |         |
-| Atari MS BASIC II  | A800XMac 6.0     | MS       | 94  | 47   | 101   | 96  | 92  | 142   | 102    | 90    | 88      |
-| BASIC XL 1.03      | A800XMac 6.0     | Atari    | 35  | 27   | 28    | 59  | 62  | 33    | 74     | 80    | 42      |
-| BASIC XL 1.03 fast | A800XMac 6.0     | Atari    | 100 | 140  | 129   | 152 | 105 | 33    | 113    | 118   | 91      |
-| BASIC XE 4.1       | A800XMac 6.0     | Atari    | 37  | 24   | 27    | 65  | 60  | 33    | 60     | 75    | 40      |
-| BASIC XE 4.1 ext   | A800XMac 6.0     | XE       | 39  | 29   | 29    | 67  | 80  | 123   | 81     | 105   | 53      |
+| Atari MS BASIC II  | A800XMac 6.0     | MS       |  94 |  47  | 101   |  96 |  92 | 142   | 102    |  90   |  88     |
+| BASIC XL 1.03      | A800XMac 6.0     | Atari    |  35 |  27  |  28   |  59 |  62 |  33   |  74    |  80   |  42     |
+| BASIC XL 1.03 fast | A800XMac 6.0     | Atari    | 100 | 140  | 129   | 152 | 105 |  33   | 113    | 118   |  91     |
+| BASIC XE 4.1       | A800XMac 6.0     | Atari    |  37 |  24  |  27   |  65 |  60 |  33   |  60    |  75   |  40     |
+| BASIC XE 4.1 ext   | A800XMac 6.0     | XE       |  39 |  29  |  29   |  67 |  80 | 123   |  81    | 105   |  53     |
 | BASIC XE 4.1 fast  | A800XMac 6.0     | XE       | 130 | 176  | 145   | 206 | 167 | 128   | 129    | 177   | 153     |
 | Turbo-BASIC XL 1.5 | A800XMac 6.0     | Turbo    | 182 | 154  | 155   | 256 | 154 | 137   | 151    | 169   | 164     |
 | Basic++ 1.08       | atari++ 1.83     |          | 138 | 118  | 121   | 183 | 106 | 100   | 155    | 131   | 127     |
+| Altirra 1.29       | A800XMac 6.0     | Atari    | 145 |  77  | 105   | 223 |  96 |  41   | 101    | 112   |  91     |
 
-**wilkinson looping tests**, seconds rounded to one decimal:
+**wilkinson looping tests**, seconds rounded to one decimal, lower is better:
 
 | BASIC              | System           | Math lib | a     | b     | c     | g     | h     |
 |--------------------|------------------|----------|-------|-------|-------|-------|-------|
-| Atari Rev C        | A800XMac 6.0     | Atari    | 71.6  | 71.6  | 72.1  | 70.1  | 55.9  |
-| Atari Rev C        | A800XMac 6.0     | FastChip | 62.4  | 62.4  | 62.9  | 61.8  | 50.6  |
+| Atari Rev C        | A800XMac 6.0     | Atari    |  71.6 |  71.6 |  72.1 |  70.1 |  55.9 |
+| Atari Rev C        | A800XMac 6.0     | FastChip |  62.4 |  62.4 |  62.9 |  61.8 |  50.6 |
 | Atari + FASTPROG   | A800XMac 6.0     | Atari    |       |       |       |       |       |
-| Atari + FASTPROG   | A800XMac 6.0     | FastChip | 63.8  | 63.8  | 64.3  | 63.2  | 51.9  |
-| Atari MS BASIC II  | A800XMac 6.0     | MS       | 270.8 | 708.2 | 57.8  | 57.1  | 258.9 |
-| BASIC XL 1.03      | A800XMac 6.0     | Atari    | 36.9  | 36.9  | 37.5  | 36.9  | 33.5  |
-| BASIC XL 1.03 fast | A800XMac 6.0     | Atari    | 31.2  | 31.2  | 31.7  | 31.2  | 31.4  |
-| BASIC XE 4.1       | A800XMac 6.0     | Atari    | 37.1  | 37.1  | 37.2  | 36.7  | 28.7  |
-| BASIC XE 4.1 ext   | A800XMac 6.0     | XE       | 26.3  | 26.3  | 26.4  | 25.8  | 25.2  |
-| BASIC XE 4.1 fast  | A800XMac 6.0     | XE       | 21.0  | 21.0  | 21.1  | 20.6  | 22.8  |
-| Turbo-BASIC XL 1.5 | A800XMac 6.0     | Turbo    | 29.7  | 29.7  | 30.1  | 29.6  | 23.3  |
+| Atari + FASTPROG   | A800XMac 6.0     | FastChip |  63.8 |  63.8 |  64.3 |  63.2 |  51.9 |
+| Atari MS BASIC II  | A800XMac 6.0     | MS       | 270.8 | 708.2 |  57.8 |  57.1 | 258.9 |
+| BASIC XL 1.03      | A800XMac 6.0     | Atari    |  36.9 | 36.9  |  37.5 |  36.9 |  33.5 |
+| BASIC XL 1.03 fast | A800XMac 6.0     | Atari    |  31.2 | 31.2  |  31.7 |  31.2 |  31.4 |
+| BASIC XE 4.1       | A800XMac 6.0     | Atari    |  37.1 | 37.1  |  37.2 |  36.7 |  28.7 |
+| BASIC XE 4.1 ext   | A800XMac 6.0     | XE       |  26.3 | 26.3  |  26.4 |  25.8 |  25.2 |
+| BASIC XE 4.1 fast  | A800XMac 6.0     | XE       |  21.0 | 21.0  |  21.1 |  20.6 |  22.8 |
+| Turbo-BASIC XL 1.5 | A800XMac 6.0     | Turbo    |  29.7 | 29.7  |  30.1 |  29.6 |  23.3 |
+| Altirra 1.29       | A800XMac 6.0     | Atari    |  36.5 | 35.6  |  37.0 |  35.6 |  25.4 |
 
 Notes:
 
