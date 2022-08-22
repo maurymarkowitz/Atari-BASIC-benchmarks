@@ -36,7 +36,7 @@ If you'd like to add one, please record the test conditions - emulator or platfo
 | Turbo-BASIC XL 1.5 | A800XMac 6.0     | Turbo    | 0.9   | 3.1   |  8.2  |  8.9  | 10.0  | 15.6  | 26.2  |  6.1  |
 | Altirra 1.29       | A800XMac 6.0     | Atari    | 1.1   | 4.3   | 16.2  | 16.1  | 18.5  | 24.5  | 35.7  | 44.9  |
 
-**scruss tests**, 100=100% of C64 performance on that test, higher is better:
+**faicuai tests**, 100=100% of C64 performance on that test, higher is better:
 
 | BASIC              | System           | Math lib | for | goto | gosub | if  | fn  | maths | string | array | overall |
 |--------------------|------------------|----------|-----|------|-------|-----|-----|-------|--------|-------|---------|
